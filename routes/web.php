@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ProjectsController;
+use App\Http\Controllers\PhotographyController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AboutController;
 use Illuminate\Support\Facades\Route;
@@ -18,6 +19,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/about', [AboutController::class, 'index'])->name('about');
 Route::get('/projects', [ProjectsController::class, 'index'])->name('projects');
+Route::get('/photography', [PhotographyController::class, 'index'])->name('photography');
 
 /*
 |--------------------------------------------------------------------------
